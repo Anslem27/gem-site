@@ -1,6 +1,6 @@
+import React from 'react'
 
-
-function Footer() {
+const Footer = () => {
   return <footer>
     <div className="container">
       <nav>
@@ -15,53 +15,53 @@ function Footer() {
 
     </div>
     <style jsx>{`
-      footer {
-        background-color: #FAFAFA;
-        border-top: 1px solid #EAEAEA;
-        border-bottom: 1px solid #EAEAEA;
-        color: #999999;
-        font-size: 14px;
-      }
+    footer {
+      background-color: #FAFAFA;
+      border-top: 1px solid #EAEAEA;
+      border-bottom: 1px solid #EAEAEA;
+      color: #999999;
+      font-size: 14px;
+    }
 
-      a {
-        text-decoration: none;
-        color: #999999;
-        font-size: 1.4rem;     
-        transition: color 0.2s ease;           
-      }
+    a {
+      text-decoration: none;
+      color: #999999;
+      font-size: 1.4rem;     
+      transition: color 0.2s ease;           
+    }
 
-      a:hover {
-        color: black;
-      }
+    a:hover {
+      color: black;
+    }
 
-      a, span {
-        margin-left: 10px;        
-      }
+    a, span {
+      margin-left: 10px;        
+    }
 
-      a:first-child {
-        margin-left: 0;
-      }
+    a:first-child {
+      margin-left: 0;
+    }
 
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 1000px;
+      margin: 0 auto;
+      padding: 62px 0;
+    }
+
+    .container :global(svg) {
+      fill: #EAEAEA;
+    }
+
+    @media (max-width: 1036px) {
       .container {
-        display: flex;
-        justify-content: space-between;
-        width: 1000px;
-        margin: 0 auto;
-        padding: 62px 0;
+        width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
       }
-
-      .container :global(svg) {
-        fill: #EAEAEA;
-      }
-
-      @media (max-width: 1036px) {
-        .container {
-          width: 100%;
-          padding-left: 18px;
-          padding-right: 18px;
-        }
-      }
-    `}</style>
+    }
+  `}</style>
   </footer>
 }
 

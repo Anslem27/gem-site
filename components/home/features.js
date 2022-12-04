@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Features = () => {
+const Features = () => {
   return <section>
     <style jsx>{`
     section {

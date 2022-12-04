@@ -1,11 +1,14 @@
 import RoundButton from '../../round-button'
 
-function Title() {
-  return <section>
-    <h1>Your Music<br /> Made Simple</h1>
-    <p className='subtitle'><strong>Gem music</strong> is a lightweight, easy to use modern&#8209;rich end music application.</p>
-    <RoundButton color='black' href='/learn'>Learn More</RoundButton>
-    <style jsx>{`
+import React from 'react'
+
+const Title = () => {
+  return (
+    <section>
+      <h1>Your Music<br /> Made Simple</h1>
+      <p className='subtitle'><strong>Gem music</strong> is a lightweight, easy to use modern&#8209;rich end music application.</p>
+      <RoundButton color='black' href='/learn'>Learn More</RoundButton>
+      <style jsx>{`
       section {
         display: flex;
         align-items: center;
@@ -46,7 +49,8 @@ function Title() {
         }
       }
     `}</style>
-  </section>
+    </section>
+  )
 }
 
 export default Title

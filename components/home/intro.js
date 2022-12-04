@@ -1,15 +1,17 @@
-import {Component} from 'react'
+import { Component } from 'react'
 import Video from './intro/video'
 import NotificationBanner from './intro/notification-banner'
 import Title from './intro/title'
 
-function Intro() {
+import React from 'react'
+
+const Intro = () => {
   return (
-  <>  
-    <NotificationBanner />
-    <Title />
-    <Video />
-  </>
+    <>
+      <NotificationBanner />
+      <Title />
+      <Video />
+    </>
   )
 }
 
